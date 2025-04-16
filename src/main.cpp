@@ -1,7 +1,8 @@
 #include "cli.hpp"
+#include "ToDoList.hpp"
 
 int main() {
-    mainMenu();
-
+    ToDoList lst;
+    inputHandler(lst);
     return 0;
 }
