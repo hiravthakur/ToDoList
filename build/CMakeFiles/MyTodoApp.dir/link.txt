@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/MyTodoApp.dir/src/main.cpp.o CMakeFiles/MyTodoApp.dir/src/TodoList.cpp.o CMakeFiles/MyTodoApp.dir/ui/cli.cpp.o -o MyTodoApp
