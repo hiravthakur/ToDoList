@@ -63,11 +63,11 @@ CMAKE_BINARY_DIR = /Users/hiravthakur/ToDoList/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/MyTodoApp.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen:
+codegen: CMakeFiles/MyTodoApp.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,8 +75,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: CMakeFiles/MyTodoApp.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MyTodoApp.dir
+
+# All Build rule for target.
+CMakeFiles/MyTodoApp.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hiravthakur/ToDoList/build/CMakeFiles --progress-num=1,2,3,4 "Built target MyTodoApp"
+.PHONY : CMakeFiles/MyTodoApp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MyTodoApp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hiravthakur/ToDoList/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyTodoApp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hiravthakur/ToDoList/build/CMakeFiles 0
+.PHONY : CMakeFiles/MyTodoApp.dir/rule
+
+# Convenience name for target.
+MyTodoApp: CMakeFiles/MyTodoApp.dir/rule
+.PHONY : MyTodoApp
+
+# codegen rule for target.
+CMakeFiles/MyTodoApp.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/hiravthakur/ToDoList/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target MyTodoApp"
+.PHONY : CMakeFiles/MyTodoApp.dir/codegen
+
+# clean rule for target.
+CMakeFiles/MyTodoApp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/clean
+.PHONY : CMakeFiles/MyTodoApp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

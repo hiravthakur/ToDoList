@@ -116,6 +116,91 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named MyTodoApp
+
+# Build rule for target.
+MyTodoApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyTodoApp
+.PHONY : MyTodoApp
+
+# fast build rule for target.
+MyTodoApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/build
+.PHONY : MyTodoApp/fast
+
+src/TodoList.o: src/TodoList.cpp.o
+.PHONY : src/TodoList.o
+
+# target to build an object file
+src/TodoList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/src/TodoList.cpp.o
+.PHONY : src/TodoList.cpp.o
+
+src/TodoList.i: src/TodoList.cpp.i
+.PHONY : src/TodoList.i
+
+# target to preprocess a source file
+src/TodoList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/src/TodoList.cpp.i
+.PHONY : src/TodoList.cpp.i
+
+src/TodoList.s: src/TodoList.cpp.s
+.PHONY : src/TodoList.s
+
+# target to generate assembly for a file
+src/TodoList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/src/TodoList.cpp.s
+.PHONY : src/TodoList.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+ui/cli.o: ui/cli.cpp.o
+.PHONY : ui/cli.o
+
+# target to build an object file
+ui/cli.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/ui/cli.cpp.o
+.PHONY : ui/cli.cpp.o
+
+ui/cli.i: ui/cli.cpp.i
+.PHONY : ui/cli.i
+
+# target to preprocess a source file
+ui/cli.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/ui/cli.cpp.i
+.PHONY : ui/cli.cpp.i
+
+ui/cli.s: ui/cli.cpp.s
+.PHONY : ui/cli.s
+
+# target to generate assembly for a file
+ui/cli.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyTodoApp.dir/build.make CMakeFiles/MyTodoApp.dir/ui/cli.cpp.s
+.PHONY : ui/cli.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +209,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... MyTodoApp"
+	@echo "... src/TodoList.o"
+	@echo "... src/TodoList.i"
+	@echo "... src/TodoList.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... ui/cli.o"
+	@echo "... ui/cli.i"
+	@echo "... ui/cli.s"
 .PHONY : help
 
 
