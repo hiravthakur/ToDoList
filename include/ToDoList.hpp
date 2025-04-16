@@ -19,7 +19,7 @@ private:
 public:
 
     //adds item to the toDoList based on Priority
-    bool addItem(int priority, std::string& desc);
+    void addItem(int priority, std::string& desc);
 
     //Sorts the items in the list based on prioritty
     std::vector<item> sortItems();
